@@ -7,13 +7,14 @@
     <title>Clima App</title>
     <link rel="shorcut icon" href="CSS/img/favicon.png">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/pages/help.css">
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <img src="CSS/img/clima.png"><span>Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -39,18 +40,22 @@
             </div>
         </section>
         <section>
-            <form action="";>
-                <label for="Nombre"><b>Nombre:</b></label>
-                <input type="text" id="Nombre" name="Nombre">
-                <br>
-                <label for="mail"><b>Email:</b></label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="mensaje"><b>Mensaje:</b></label>
-                <textarea name="mensaje" id="mensaje" cols="21" rows="3"></textarea>
-                <br>
-                <button type="reset">Limpiar</button>
-                <button type="submit">Enviar</button>
+            <form class="help" action="">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text">
+
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email">
+
+                <label for="textArea">Mensaje:</label>
+                <textarea id="textArea" name="metextArea" cols="30" rows="10"></textarea>
+
+            <p>
+                <button>Limpiar</button>
+                <button>Enviar</button>
+            </p>
+
+                <p class="error">Ingrese un Email válido</p>
             </form>
         </section>
     </main>

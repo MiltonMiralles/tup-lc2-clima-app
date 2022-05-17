@@ -1,0 +1,21 @@
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+.help button {
+    align-self: center;
+}
+
+.help p {
+    border-radius: 20px; /*Borde redondeado del warning*/
+    color: white; /*Color de la fuente*/
+    padding: 15px; /*Tamaño*/
+    margin: 10px; /*Margen*/
+    text-align: center; /*Alineación del texto*/
+    align-self: normal; /*Alineacion del elemento dentro del bloque*/
+}
+
+p.error {
+    background-color: var(--color-error); /*Color tipo error*/
+}

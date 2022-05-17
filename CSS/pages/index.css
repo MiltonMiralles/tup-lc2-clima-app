@@ -1,0 +1,16 @@
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 5px 5px 15px grey;
+}
+
+div.card p {
+    margin: 8px; /*Margen entre las fuentes*/
+    margin-left: 20px; /*Margen entre las fuentes y el borde izquierdo*/
+    margin-right: 20px; /*Margen entre las fuentes y el borde derecho*/
+}

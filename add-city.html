@@ -8,12 +8,13 @@
     <link rel="shorcut icon" href="CSS/img/favicon.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="CSS/pages/add-city.css">
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <img src="CSS/img/clima.png"><span>Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -27,12 +28,16 @@
     <main>
         <h2>Agregar Ciudad</h2>
         <section>
-            <div class="card">
+            <form class="add-city" action= "">
                 <label for="agregarciudad"><b>Ingrese la ciudad a agregar:</b></label>
                 <input type="text" id="agregarciudad" name="agregarciudad">
                 <br>
                 <button>Agregar</button>
-            </div class="card">
+
+                <p class="success">Ciudad agregada con éxito</p>
+                <p class="error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>
+                <p class="warning">La ciudad ingresada ya se encuentra almacenada</p>
+            </form>
         </section>
     </main>
     <footer>

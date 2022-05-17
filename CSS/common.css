@@ -11,6 +11,9 @@
     --color-active: #5df2d6;
     --color-back-active: #04957d;
     --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
+    --color-success: #28a745; /*Color de aprobación*/
+    --color-warning: #ffc107;/*Color de las advertencias*/
+    --color-error: #dc3545;/*Color para los errores*/
 }
 
 body {
@@ -34,7 +37,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom-left-radius: 60px; /*Margen inferior izquierdo redondeado */
+    border-bottom-right-radius: 60px; /*Margen inferior derecho redondeado */
+
 }
 
 nav>ul {
@@ -61,6 +67,8 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 10px; /*Borde superior izquierdo de seleccion de pestaña redondeado*/
+    border-top-right-radius: 10px; /*Borde superior derecho de seleccion de pestaña redondeado*/
 }
 
 main {
@@ -101,7 +109,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient); /*Color del footer acorde al de la página*/
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -115,6 +123,33 @@ footer p {
 
 main p {
     margin-bottom: 16px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 8px; /*Tamaño del boton de seleccion*/
+    border-radius: 5px; /*Bordes redondeados al boton de select*/
+}
+
+button {
+    padding: 8px; /*Boton de consulta mismo tamaño que el de select*/
+    border-radius: 10px; /*Bordes redondeados al boton de select*/
+    background-color: var(--color-theme); /*Mismo background que el resto de los botones*/
+    color: white; /*Color de la letra*/
+    margin-top: 10px; /*Distancia de margen con la seccion de arriba*/
+    margin-bottom: 10px; /*Distancia de margen con la seccion de abajo*/
+}
+
+textarea {
+    resize: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 

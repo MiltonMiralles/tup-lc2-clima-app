@@ -16,6 +16,10 @@
     --color-error: #dc3545;/*Color para los errores*/
 }
 
+#logo-clima {
+    margin-right: 20px;
+}
+
 body {
     height: 100%;
     width: 100%;

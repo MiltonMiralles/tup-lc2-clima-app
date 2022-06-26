@@ -3,6 +3,12 @@
     flex-direction: column;
     align-items: center;
 }
+
+#parrafoBoton {
+    padding: 0;
+    margin-top: 0;
+}
+
 .add-city p {
     border-radius: 20px; /*Borde redondeado*/
     color: white; /*Color de la fuente*/
@@ -10,6 +16,8 @@
     margin: 10px; /*Margen entre warning y warning*/
     text-align: center; /*Ubicación del texto en el centro*/
     align-self: normal; /*Alineación del elemento dentro del bloque*/
+    flex-direction: column;
+    align-items: center;
 }
 
 p.success {

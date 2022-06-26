@@ -29,17 +29,15 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-        <section>
-            <form class="add-city" action= "">
-                <label for="agregarciudad"><b>Ingrese la ciudad a agregar:</b></label>
-                <input type="text" id="agregarciudad" name="agregarciudad">
-                <br>
-                <button>Agregar</button>
-
-                <p class="success">Ciudad agregada con éxito</p>
-                <p class="error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>
-                <p class="warning">La ciudad ingresada ya se encuentra almacenada</p>
+        <section class="add-city">
+            <form class="add-city" id="add-city" action= "">
+                <label for="ingresarCiudad"><b>Ingrese la ciudad a agregar:</label>
+                <input type="text" id="ingresarCiudad" name="ingresarCiudad">
+                <button type="button" id="buttonAdd">Agregar</button>
             </form>
+            <div id="messajeBox" class="add-city">
+
+            </div>
         </section>
     </main>
     <footer>

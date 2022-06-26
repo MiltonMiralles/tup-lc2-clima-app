@@ -45,7 +45,7 @@ async function addCityToLocalStorage() { //Funcion para agregar ciudades al Loca
 };
 
 let successMessage = '<p class="alert success">Ciudad agregada con éxito</p>'; //Códigos HTML ya definidos los colores en el CSS
-let errorMessage = '<p class="alert error">Error: La ciudad ingresada no se encuenta en la API o se produjo un error al consultar</p>';
+let errorMessage = '<p class="alert error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>';
 let warningMessage = '<p class="alert warning">La ciudad ingresada ya se encuentra almacenada</p>';
 
 let buttonAddCity = document.getElementById("buttonAdd"); //Tomamos el ID del botón

@@ -10,8 +10,8 @@ function addCitiesToSelector() { //Funcion que agrega la ciudad en el index
         }
 }
 
-function verClima(data){
-
+async function verClima(){
+    let data = await consultAPI(selector.value);
     let ciudad1 = data.name;
     //let icono = data.weather[0].icon;
     let temperatura = data.main.temp;
@@ -44,11 +44,8 @@ function verClima(data){
     document.getElementById("card").appendChild(node6);
 } 
 
-function createCard() {
-    consultAPI(selector.value, "index");
-}
 
 let consultButton = document.getElementById("consultarClima");
-consultButton.addEventListener("click", createCard)
+consultButton.addEventListener("click", verClima)
 
 addCitiesToSelector();

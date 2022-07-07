@@ -7,7 +7,7 @@ async function validateCity(nuevaCiudad) {
         };
     };
 
-    if (await consultAPI(nuevaCiudad) == "error") { //Retorna error si la ciudad no se encuentra en la API
+    if (await consultAPI(nuevaCiudad, "add-city") == "error") { //Retorna error si la ciudad no se encuentra en la API
         return "error";
     }
     else {
